@@ -1,0 +1,1140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fafafa;
+    color: #151515;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.sarlavha {
+    width: 100%;
+    height: 65px;
+    padding: 0 6.2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+/* NAVIGATION */
+
+.menyu {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.menyu a {
+    text-decoration: none;
+    position: relative;
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 15px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+
+.menyu a:not(.aloqa-tugma)::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #001eff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.menyu a:not(.aloqa-tugma):hover::after {
+    width: 100%;
+}
+
+.menyu a:not(.aloqa-tugma):hover {
+    color: #f30000fe;
+}
+
+
+
+.aloqa-tugma {
+    background: #000000;
+    color: white !important;
+    padding: 10px 14px;
+    border-radius: 50px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.aloqa-tugma:hover {
+    background: #0290e8;
+    border: 2px solid rgb(0, 106, 255);
+    transform: translateY(-2px);
+}
+/* MAIN */
+
+.asosiy {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8% 130px;
+    overflow: hidden;
+}
+
+/* LEFT BACKGROUND */
+
+.chap-fon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 58%;
+    background: #f5f5f5;
+    z-index: 0;
+}
+
+/* MAIN TEXT */
+
+.asosiy-matn {
+    position: relative;
+    z-index: 2;
+    width: 58%;
+    margin-top: -30px;
+}
+
+.asosiy-matn h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    font-weight: 500;
+    line-height: 0.87;
+    letter-spacing: -4px;
+    transition: 0.4s ease;
+}
+
+.asosiy-matn h1:hover {
+    letter-spacing: -3px;
+}
+
+/* PROFESSION */
+
+.kasb {
+    margin-top: 25px;
+}
+
+.kasb p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    transition: 0.3s ease;
+}
+
+.kasb p:hover {
+    transform: translateX(10px);
+    color: #0033ff;
+}
+
+/* PORTRAIT */
+
+.portret {
+    width: 45%;
+    height: 490px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portret img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 50px;
+    transition: 0.5s ease;
+}
+
+.portret img:hover {
+    transform: scale(1.03) translateY(-5px);
+    color: gray;
+}
+
+/* SIDE LABEL */
+
+.yon-belgi {
+    position: absolute;
+    right: 0;
+    top: 37%;
+    width: 28px;
+    height: 92px;
+    background: #050505;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    transition: 0.3s ease;
+    z-index: 5;
+}
+
+.yon-belgi:hover {
+    width: 38px;
+}
+
+.yon-belgi span {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.yon-belgi p {
+    font-size: 7px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* BOTTOM LOGOS */
+
+.ishlar {
+    position: absolute;
+    bottom: 30px;
+    left: 36%;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: 3;
+}
+
+.ishlar-sarlavha {
+    font-size: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.ishlar-sarlavha:hover{
+    color: #0033ff;
+    transform: scale(1.09)
+   
+}
+
+.brendlar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brend {
+    width: 65px;
+    height: 35px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.brend:hover {
+    
+    
+    transform: translateY(-2px) scale(1.1);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .asosiy {
+        padding: 80px 5% 120px;
+    }
+
+    .asosiy-matn {
+        width: 60%;
+    }
+
+    .asosiy-matn h1 {
+        font-size: 7vw;
+    }
+
+    .portret {
+        width: 38%;
+        height: 380px;
+    }
+
+    .ishlar {
+        left: 25%;
+        width: 70%;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .sarlavha {
+        height: 65px;
+        padding: 0 5%;
+    }
+
+    .logo img {
+        width: 58px;
+    }
+
+    .menyu {
+        gap: 9px;
+    }
+
+    .menyu a {
+        font-size: 7px;
+    }
+
+    .menyu .aloqa-tugma {
+        padding: 9px 8px;
+    }
+
+    .asosiy {
+        min-height: 100svh;
+        padding: 100px 6% 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .chap-fon {
+        width: 60%;
+        height: 40%;
+    }
+
+    .asosiy-matn {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .asosiy-matn h1 {
+        font-size: 11vw;
+        line-height: 0.95;
+        letter-spacing: -2px;
+    }
+
+    .kasb {
+        margin-top: 15px;
+    }
+
+    .kasb p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .portret {
+        width: 100%;
+        height: 270px;
+    }
+
+    .portret img {
+        object-position: center;
+    }
+
+    .yon-belgi {
+        top: 40%;
+        width: 22px;
+        height: 75px;
+    }
+
+    .ishlar {
+        left: 7%;
+        width: 86%;
+        bottom: 20px;
+        gap: 15px;
+    }
+
+    .brendlar {
+        gap: 10px;
+    }
+
+    .brend {
+        width: 48px;
+        height: 28px;
+    }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+
+    .menyu {
+        gap: 7px;
+    }
+
+    .menyu a {
+        font-size: 6px;
+    }
+
+    .menyu .aloqa-tugma {
+        padding: 8px 6px;
+    }
+
+    .asosiy-matn h1 {
+        font-size: 11.5vw;
+    }
+
+    .brend {
+        width: 45px;
+        height: 27px;
+    }
+
+}
+
+.haqida {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+    padding: 55px 6%;
+    margin-top: 20px;
+}
+
+.haqida-sarlavha {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.haqida p {
+    max-width: 850px;
+    font-size: 32px;
+    line-height: 1.35;
+    color: #222;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .haqida {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .haqida p {
+        font-size: 23px;
+    }
+}
+
+.loyihalar {
+    width: 100%;
+    padding: 120px 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    background: #fafafa;
+}
+
+.loyiha {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.loyiha-matn {
+    padding-left: 20px;
+}
+
+.loyiha-matn h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.loyiha-matn p {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 280px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.loyiha-rasm {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.loyiha-rasm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+}
+
+.loyiha-rasm img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.teskari {
+    grid-template-columns: 1.2fr 0.8fr;
+}
+
+.teskari .loyiha-matn {
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .loyihalar {
+        padding: 70px 6%;
+        gap: 75px;
+    }
+
+    .loyiha,
+    .teskari {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .loyiha-rasm {
+        height: 280px;
+    }
+
+    .loyiha-matn {
+        padding-left: 0;
+    }
+
+    .loyiha-matn h2 {
+        font-size: 22px;
+    }
+
+    .loyiha-matn p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loyiha-rasm {
+        height: 220px;
+    }
+
+    .loyiha-matn h2 {
+        font-size: 19px;
+    }
+}
+
+.boshqa-loyihalar {
+    width: 100%;
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: #fafafa;
+}
+
+.loyiha-belgi {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 12px;
+    letter-spacing: 0.5px;
+}
+
+.loyiha-royxati {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loyiha-royxati a {
+    display: block;
+    text-decoration: none;
+    color: #171717;
+    font-size: clamp(10px, 3vw, 40px);
+    font-weight: 500;
+    padding: 8px 0;
+    border-top: 1px solid #e8e8e8;
+    transition: 0.3s ease;
+}
+
+.loyiha-royxati a:last-child {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.loyiha-royxati a:hover {
+    color: #0044fe;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .boshqa-loyihalar {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 6%;
+    }
+
+    .loyiha-royxati a {
+        font-size: 35px;
+    }
+}   
+
+.jarayon {
+    width: 100%;
+    padding: 100px 5%;
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.jarayon-sarlavha {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10%;
+    margin-bottom: 65px;
+}
+
+.jarayon-sarlavha h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    line-height: 0.88;
+    font-weight: 500;
+    letter-spacing: -3px;
+    color: #171717;
+}
+
+.jarayon-sarlavha span {
+    font-size: 9px;
+    margin: 0 0 8px 15px;
+    white-space: nowrap;
+}
+
+.jarayon-kartalar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.jarayon-karta {
+    width: 100%;
+    min-height: 340px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+    background: #fdfeff;
+}
+
+.karta-rasm {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.karta-rasm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.6s ease;
+}
+
+.jarayon-karta:hover {
+    transform: translateY(-7px);
+    border-color: #00ff04;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.jarayon-karta:hover .karta-rasm img {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+.karta-matn {
+    margin-top: 15px;
+}
+
+.karta-matn span {
+    font-size: 10px;
+    color: #888;
+}
+
+.karta-matn h3 {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 3px;
+    color: #171717;
+}
+
+.karta-matn p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .jarayon-kartalar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jarayon-sarlavha {
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .jarayon {
+        padding: 65px 5%;
+    }
+
+    .jarayon-kartalar {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .jarayon-sarlavha {
+        justify-content: flex-start;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .jarayon-sarlavha h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .jarayon-sarlavha span {
+        font-size: 8px;
+    }
+
+    .jarayon-karta {
+        min-height: 330px;
+    }
+
+    .karta-rasm {
+        height: 210px;
+    }
+}  
+
+
+.mukofotlar {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 5%;
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.mukofot-sarlavha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 55px;
+}
+
+.mukofot-sarlavha h1 {
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 0.82;
+    font-weight: 500;
+    letter-spacing: -4px;
+    color: #171717;
+}
+
+.mukofot-sarlavha span {
+    font-size: 9px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.poster-oyna {
+    width: calc(100% + 10%);
+    margin-left: -5%;
+    overflow: hidden;
+    padding: 0 0 30px;
+}
+
+.posterlar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: max-content;
+    animation: poster-yurish 35s linear infinite;
+}
+
+.posterlar img {
+    width: 145px;
+    height: 205px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.posterlar img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.08);
+}
+
+.poster-oyna:hover .posterlar {
+    animation-play-state: paused;
+}
+
+@keyframes poster-yurish {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.mukofot-jadval {
+    width: 68%;
+    margin: 115px 0 0 auto;
+}
+
+.jadval-qator {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr 0.4fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 15px;
+    color: #000000;
+    transition: 0.3s ease;
+    right: 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jadval-qator:last-child {
+    border-bottom: 1px solid #ad1111;
+}
+
+.jadval-qator span:last-child {
+    text-align: right;
+}
+
+.jadval-qator:hover {
+    background: #5882E8;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .mukofotlar {
+        padding: 65px 5%;
+    }
+
+    .mukofot-sarlavha {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .mukofot-sarlavha h1 {
+        font-size: 60px;
+    }
+
+    .posterlar img {
+        width: 120px;
+        height: 170px;
+    }
+
+    .mukofot-jadval {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .jadval-qator {
+        grid-template-columns: 1.2fr 1fr 1fr 0.4fr;
+        gap: 7px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mukofot-sarlavha h1 {
+        font-size: 48px;
+    }
+
+    .mukofot-sarlavha span {
+        font-size: 7px;
+    }
+
+    .posterlar img {
+        width: 105px;
+        height: 150px;
+    }
+
+    .jadval-qator {
+        font-size: 7px;
+        gap: 4px;
+        padding: 13px 2px;
+    }
+}
+
+/* Asosiy konteyner */
+.testimonial-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-card {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+/* Yuqori panel */
+.testimonial-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #000000;
+  padding: 15px 20px;
+  gap: 10px;
+}
+
+.header-item {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.header-item .label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.header-item .value {
+  font-weight: normal;
+  color: #333333;
+}
+
+/* O'rta qism */
+.testimonial-body {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0 0 300px;
+  height: 300px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); /* Rasmni oq-qora qilish */
+  transition: transform 0.3s ease;
+}
+
+/* Faqat rasm biroz kattalashishi uchun oddiy hover */
+.image-container:hover .person-img {
+  transform: scale(1.02);
+}
+
+.content-container {
+  flex: 1;
+}
+
+.quote-icon {
+  font-size: 70px;
+  line-height: 1;
+  color: #dcdcdc;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111111;
+}
+
+/* Pastki panel */
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #000000;
+  padding: 12px 20px;
+}
+
+.counter {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.nav-btn:hover {
+  opacity: 0.6;
+  color: #0000ff;
+}
+
+/* Mobil uchun moslashish */
+@media (max-width: 768px) {
+  .testimonial-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-body {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .image-container {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* Asosiy sektsiya */
+.faq-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.faq-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Sarlavha qismi */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.faq-main-title {
+  font-size: 64px;
+  line-height: 0.95;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.faq-subtitle {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Savollar ro'yxati */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Ustiga borganda ozgina bilinib turishi uchun (xohlasangiz o'chirasiz) */
+.faq-item:hover {
+  background-color: #0088ff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.faq-question {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #111111;
+}
+
+.faq-icon {
+  font-size: 18px;
+  font-weight: normal;
+  color: #111111;
+}
+
+/* Mobil qurilmalar uchun moslashish */
+@media (max-width: 768px) {
+  .faq-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-main-title {
+    font-size: 40px;
+  }
+  
+  .faq-subtitle {
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  .faq-question {
+    font-size: 11px;
+    padding-right: 10px;
+  }
+}
