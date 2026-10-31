@@ -72,7 +72,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #001eff;
+    background: #000000;
     left: 0;
     bottom: -5px;
     transition: 0.3s ease;
@@ -83,7 +83,7 @@ body {
 }
 
 .menyu a:not(.aloqa-tugma):hover {
-    color: #f30000fe;
+    color: #0059fffe;
 }
 
 
@@ -199,10 +199,12 @@ body {
     position: absolute;
     right: 0;
     top: 37%;
-    width: 28px;
-    height: 92px;
-    background: #050505;
-    color: white;
+    width: 40px;
+    font-size: 50px;
+    height: 100px;
+    background: #000000;
+    color: rgb(252, 251, 251);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,16 +215,16 @@ body {
 }
 
 .yon-belgi:hover {
-    width: 38px;
+      transform: scale(1.09);
 }
 
 .yon-belgi span {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 800;
 }
 
 .yon-belgi p {
-    font-size: 7px;
+    font-size: 10px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
@@ -1137,4 +1139,42 @@ body {
     font-size: 11px;
     padding-right: 10px;
   }
+}
+
+.footer {
+    width: 100%;
+    padding: 35px 7%;
+    background: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #0400ff;
+    transform: translateY(-2px);
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
